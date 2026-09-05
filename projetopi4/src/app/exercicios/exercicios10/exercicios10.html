@@ -1,0 +1,6 @@
+<label>Usuário: <input [(ngModel)]="usuario"></label><br>
+<label>Senha: <input type="password" [(ngModel)]="senha"></label><br>
+
+<button [disabled]="camposInvalidos" (click)="entrar()">Entrar</button>
+
+<p *ngIf="mensagemBoasVindas">{{ mensagemBoasVindas }}</p>
