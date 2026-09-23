@@ -1,0 +1,9 @@
+<div class="card">
+  <h3>Exercício 7 - Cores alternadas</h3>
+  <ul>
+    <li *ngFor="let disciplina of disciplinas; let par = even; let impar = odd; let primeiro = first; let ultimo = last"
+        [ngClass]="{ 'linha-par': par, 'linha-impar': impar, 'primeira': primeiro, 'ultima': ultimo }">
+      {{ disciplina }}
+    </li>
+  </ul>
+</div>

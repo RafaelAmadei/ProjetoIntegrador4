@@ -1,0 +1,17 @@
+<div class="card">
+  <h3>Exercício 9 - Classificação dos produtos</h3>
+
+  <ul>
+    <li
+      *ngFor="let produto of produtos"
+      [ngClass]="{
+        'vermelho': produto.quantidade === 0,
+        'amarelo': produto.quantidade > 0 && produto.quantidade <= 5,
+        'verde': produto.quantidade > 5
+      }"
+    >
+      {{ produto.nome }} (Qtd: {{ produto.quantidade }}) -
+      {{ statusEstoque(produto) }}
+    </li>
+  </ul>
+</div>

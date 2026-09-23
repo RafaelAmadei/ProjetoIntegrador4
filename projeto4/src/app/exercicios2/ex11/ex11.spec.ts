@@ -1,0 +1,22 @@
+import { ComponentFixture, TestBed } from '@angular/core/testing';
+
+import { FiltroComponent } from './ex11';
+
+describe('FiltroComponent', () => {
+  let component: FiltroComponent;
+  let fixture: ComponentFixture<FiltroComponent>;
+
+  beforeEach(async () => {
+    await TestBed.configureTestingModule({
+      imports: [FiltroComponent],
+    }).compileComponents();
+
+    fixture = TestBed.createComponent(FiltroComponent);
+    component = fixture.componentInstance;
+    await fixture.whenStable();
+  });
+
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});

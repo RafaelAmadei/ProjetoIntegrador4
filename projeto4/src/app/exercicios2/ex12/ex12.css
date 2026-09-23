@@ -1,0 +1,6 @@
+.card { border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 16px; }
+.form { display: flex; gap: 8px; margin-bottom: 10px; }
+.erro { color: #d9534f; }
+ul { list-style: none; padding: 0; }
+li { padding: 4px 0; }
+button { margin-left: 8px; cursor: pointer; }

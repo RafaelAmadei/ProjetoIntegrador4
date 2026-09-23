@@ -1,0 +1,16 @@
+<div class="card">
+  <h3>Exercício 6 - Tratamento de lista vazia</h3>
+
+  <p>Total de nomes: {{ nomes.length }}</p>
+
+  <ul *ngIf="nomes.length > 0; else listaVazia">
+    <li *ngFor="let nome of nomes">{{ nome }}</li>
+  </ul>
+  <ng-template #listaVazia>
+    <p>Nenhum nome cadastrado</p>
+  </ng-template>
+
+  <button (click)="removerUltimo()">Remover último</button>
+  <button (click)="limparLista()">Limpar lista</button>
+  <button (click)="restaurarLista()">Restaurar lista</button>
+</div>

@@ -1,0 +1,11 @@
+<div class="card">
+  <h3>Exercício 8 - Lista de produtos</h3>
+  <ul>
+    <li *ngFor="let produto of produtos; let i = index">
+      {{ i + 1 }} - {{ produto.nome }} |
+      Preço: {{ produto.preco | currency:'BRL' }} |
+      Qtd: {{ produto.quantidade }} |
+      Total em estoque: {{ produto.preco * produto.quantidade | currency:'BRL' }}
+    </li>
+  </ul>
+</div>

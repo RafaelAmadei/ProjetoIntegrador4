@@ -1,0 +1,7 @@
+.card { border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 16px; }
+ul { list-style: none; padding: 0; }
+li { padding: 6px 10px; }
+.linha-par { background-color: #f0f4ff; }
+.linha-impar { background-color: #fff7e6; }
+.primeira { font-weight: bold; }
+.ultima { border: 2px dashed #555; }

@@ -1,0 +1,6 @@
+.card { border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 16px; }
+ul { list-style: none; padding: 0; }
+li { padding: 6px 10px; margin-bottom: 4px; border-radius: 4px; color: #fff; }
+.vermelho { background-color: #d9534f; }
+.amarelo { background-color: #f0ad4e; color: #333; }
+.verde { background-color: #5cb85c; }

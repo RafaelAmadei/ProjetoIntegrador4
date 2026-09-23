@@ -1,0 +1,5 @@
+.card { border: 1px solid #ccc; padding: 12px; border-radius: 6px; margin-bottom: 16px; }
+ul { list-style: none; padding: 0; }
+li { padding: 6px 0; }
+.negrito { font-weight: bold; }
+button { margin-left: 10px; cursor: pointer; }

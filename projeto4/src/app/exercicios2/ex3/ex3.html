@@ -1,0 +1,19 @@
+<div class="card">
+  <h3>Exercício 3 - Verificação de idade</h3>
+
+  <p>Idade atual: {{ idade }}</p>
+
+  <p *ngIf="idade < 12; else checkAdolescente">Criança</p>
+  <ng-template #checkAdolescente>
+    <p *ngIf="idade < 18; else checkAdulto">Adolescente</p>
+  </ng-template>
+  <ng-template #checkAdulto>
+    <p *ngIf="idade < 60; else idoso">Adulto</p>
+  </ng-template>
+  <ng-template #idoso>
+    <p>Idoso</p>
+  </ng-template>
+
+  <button (click)="aumentar()">Aumentar idade</button>
+  <button (click)="diminuir()" [disabled]="idade === 0">Diminuir idade</button>
+</div>
