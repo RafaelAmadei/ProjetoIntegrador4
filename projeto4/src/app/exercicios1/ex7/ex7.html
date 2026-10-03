@@ -1,0 +1,15 @@
+<h2>Exercício 7 - Lista</h2>
+
+<div *ngIf="nomes.length > 0; else listaVazia">
+  <p>Existem nomes na lista:</p>
+
+  <ul>
+    <li *ngFor="let nome of nomes">
+      {{ nome }}
+    </li>
+  </ul>
+</div>
+
+<ng-template #listaVazia>
+  <p>Nenhum nome encontrado.</p>
+</ng-template>

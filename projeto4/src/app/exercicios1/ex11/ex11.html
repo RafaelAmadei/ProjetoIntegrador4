@@ -1,0 +1,16 @@
+<h2>Exercício 11 - Filtro</h2>
+
+<input
+  type="text"
+  [(ngModel)]="filtro"
+  placeholder="Digite um nome">
+
+<ul>
+  <li *ngFor="let nome of nomes">
+
+    <span *ngIf="nome.toLowerCase().includes(filtro.toLowerCase())">
+      {{ nome }}
+    </span>
+
+  </li>
+</ul>

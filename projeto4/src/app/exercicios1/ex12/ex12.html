@@ -1,0 +1,37 @@
+<h2>Exercício 12 - Cadastro</h2>
+
+<label>Nome:</label>
+
+<input
+  type="text"
+  [(ngModel)]="nome"
+  placeholder="Digite seu nome">
+
+<br><br>
+
+<label>E-mail:</label>
+
+<input
+  type="email"
+  [(ngModel)]="email"
+  placeholder="Digite seu e-mail">
+
+<br><br>
+
+<button (click)="cadastrar()">
+  Cadastrar
+</button>
+
+<div *ngIf="cadastrado">
+
+  <h3>Cadastro realizado!</h3>
+
+  <p>
+    Nome: {{ nome }}
+  </p>
+
+  <p>
+    E-mail: {{ email }}
+  </p>
+
+</div>

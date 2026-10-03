@@ -1,0 +1,11 @@
+<h2>Exercício 6 - Lista Vazia</h2>
+
+<p *ngIf="nomes.length === 0">
+  A lista está vazia.
+</p>
+
+<ul>
+  <li *ngFor="let nome of nomes">
+    {{ nome }}
+  </li>
+</ul>

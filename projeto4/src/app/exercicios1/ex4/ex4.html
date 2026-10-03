@@ -1,0 +1,11 @@
+<h2>Exercício 4 - Estoque</h2>
+
+<p>Quantidade em estoque: {{ quantidade }}</p>
+
+<p *ngIf="quantidade > 0">
+  Produto disponível!
+</p>
+
+<p *ngIf="quantidade === 0">
+  Produto esgotado!
+</p>
